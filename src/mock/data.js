@@ -24,6 +24,60 @@ export const aboutData = {
   resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
 };
 
+// EXPERIENCE DATA
+export const experienceData = [
+  {
+    id: nanoid(),
+    img: 'project.jpg',
+    title: '',
+    info: '',
+    info2: '',
+    url: '',
+    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'project.jpg',
+    title: '',
+    info: '',
+    info2: '',
+    url: '',
+    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+  },
+];
+
+// SKILLS DATA
+export const skillsData = [
+  {
+    img: 'profile.jpg',
+    level: '',
+    paragraphTwo: '',
+    paragraphThree: '',
+    resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
+  },
+  {
+    img: 'profile.jpg',
+    level: '',
+    paragraphTwo: '',
+    paragraphThree: '',
+    resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
+  },
+  {
+    img: 'profile.jpg',
+    level: '',
+    paragraphTwo: '',
+    paragraphThree: '',
+    resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
+  },
+  {
+    img: 'profile.jpg',
+    level: '',
+    paragraphTwo: '',
+    paragraphThree: '',
+    resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
+  },
+];
+
 // PROJECTS DATA
 export const projectsData = [
   {

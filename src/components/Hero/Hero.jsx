@@ -3,6 +3,7 @@ import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
+// import heroBackgroundGif from '../../images/project.jpg'
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
@@ -22,7 +23,11 @@ const Header = () => {
   }, []);
 
   return (
-    <section id="hero" className="jumbotron">
+    <section
+      id="hero"
+      className="jumbotron"
+      style={{ backgroundImage: 'url(" + heroBackgroundGif + ")' }}
+    >
       <Container>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
           <h1 className="hero-title">
