@@ -2,12 +2,13 @@ import React, { useContext, useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
-import AboutImg from '../Image/AboutImg';
+import ExperienceImg from '../Image/ExperienceImg';
 import PortfolioContext from '../../context/context';
+// import teslaLogo from '../../images/teslaLogo.jpg'
 
 const Experience = () => {
-  const { about } = useContext(PortfolioContext);
-  const { img, paragraphOne, paragraphTwo, paragraphThree, resume } = about;
+  const { experience } = useContext(PortfolioContext);
+  const { img, company, title, location, timeframe, description } = experience;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -22,44 +23,51 @@ const Experience = () => {
     }
   }, []);
 
+  console.log(company);
   return (
-    <section id="about">
+    <section id="experience">
       <Container>
         <Title title="Experience" />
-        <Row className="about-wrapper">
+        <Row>
           <Col md={6} sm={12}>
             <Fade bottom duration={1000} delay={600} distance="30px">
-              <div className="about-wrapper__image">
-                <AboutImg alt="profile picture" filename={img} />
+              <div className="experience-wrapper__image">
+                <ExperienceImg alt="teslaLogo.jpg" filename={img} />
               </div>
             </Fade>
           </Col>
-          <Col md={6} sm={12}>
+          <Col>
             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
               <div className="about-wrapper__info">
+                <p className="about-wrapper__info-text">{company || 'Tesla'}</p>
+                <p className="about-wrapper__info-text">{title || 'Software Engineer Intern'}</p>
+                <p className="about-wrapper__info-text">{location || 'Remote'}</p>
+                <p className="about-wrapper__info-text">{timeframe || 'January 2021 - Present'}</p>
                 <p className="about-wrapper__info-text">
-                  {paragraphOne ||
-                    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
+                  {description || 'Worked on full stack features.'}
                 </p>
+              </div>
+            </Fade>
+          </Col>
+        </Row>
+        <Row>
+          <Col md={6} sm={12}>
+            <Fade bottom duration={1000} delay={600} distance="30px">
+              <div className="about-wrapper__image">
+                <ExperienceImg alt="profile picture" filename={img} />
+              </div>
+            </Fade>
+          </Col>
+          <Col>
+            <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+              <div className="about-wrapper__info">
+                <p className="about-wrapper__info-text">{company || 'Transcat'}</p>
+                <p className="about-wrapper__info-text">{title || 'Software Engineer Intern'}</p>
+                <p className="about-wrapper__info-text">{location || 'Rochester, New York'}</p>
+                <p className="about-wrapper__info-text">{timeframe || 'May 2019 - January 2020'}</p>
                 <p className="about-wrapper__info-text">
-                  {paragraphTwo ||
-                    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
+                  {description || 'Worked on full stack features.'}
                 </p>
-                <p className="about-wrapper__info-text">
-                  {paragraphThree || 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'}
-                </p>
-                {resume && (
-                  <span className="d-flex mt-3">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="cta-btn cta-btn--resume"
-                      href={resume}
-                    >
-                      Resume
-                    </a>
-                  </span>
-                )}
               </div>
             </Fade>
           </Col>

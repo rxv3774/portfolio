@@ -1,4 +1,5 @@
 import { nanoid } from 'nanoid';
+// import teslaLogo from '../images/teslaLogo.jpg'
 
 // HEAD DATA
 export const headData = {
@@ -27,22 +28,19 @@ export const aboutData = {
 // EXPERIENCE DATA
 export const experienceData = [
   {
-    id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    img: 'teslaLogo.jpg',
+    company: 'Tesla',
+    title: 'Software Engineer Intern',
+    location: 'Remote',
+    timeframe: '',
+    description: '',
   },
   {
-    id: nanoid(),
     img: 'project.jpg',
     title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    location: '',
+    timeframe: '',
+    description: '',
   },
 ];
 
