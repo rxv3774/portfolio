@@ -28,19 +28,22 @@ export const aboutData = {
 // EXPERIENCE DATA
 export const experienceData = [
   {
+    id: nanoid(),
     img: 'teslaLogo.jpg',
     company: 'Tesla',
     title: 'Software Engineer Intern',
     location: 'Remote',
-    timeframe: '',
-    description: '',
+    timeframe: 'January 2021 - Present',
+    description: 'Worked on full stack features.',
   },
   {
-    img: 'project.jpg',
-    title: '',
-    location: '',
-    timeframe: '',
-    description: '',
+    id: nanoid(),
+    img: 'transcatLogo.png',
+    company: 'Transcat',
+    title: 'Software Engineer Intern',
+    location: 'Rochester, New York',
+    timeframe: 'May 2019 - January 2020',
+    description: 'Worked on full stack features.',
   },
 ];
 
