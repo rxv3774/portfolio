@@ -51,31 +51,48 @@ export const experienceData = [
 export const skillsData = [
   {
     img: 'profile.jpg',
-    level: '',
-    paragraphTwo: '',
-    paragraphThree: '',
-    resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
+    level: 'Proficient',
+    language: 'Python',
   },
   {
     img: 'profile.jpg',
-    level: '',
-    paragraphTwo: '',
-    paragraphThree: '',
-    resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
+    level: 'Proficient',
+    language: 'Java',
   },
   {
     img: 'profile.jpg',
-    level: '',
-    paragraphTwo: '',
-    paragraphThree: '',
-    resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
+    level: 'Proficient',
+    language: 'C#',
   },
   {
     img: 'profile.jpg',
-    level: '',
-    paragraphTwo: '',
-    paragraphThree: '',
-    resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
+    level: 'Proficient',
+    language: 'HTML',
+  },
+  {
+    img: 'profile.jpg',
+    level: 'Proficient',
+    language: 'SQL',
+  },
+  {
+    img: 'profile.jpg',
+    level: 'Intermediate',
+    language: 'Javascript',
+  },
+  {
+    img: 'profile.jpg',
+    level: 'Intermediate',
+    language: 'C',
+  },
+  {
+    img: 'profile.jpg',
+    level: 'Intermediate',
+    language: 'PHP',
+  },
+  {
+    img: 'profile.jpg',
+    level: 'Intermediate',
+    language: 'CSS',
   },
 ];
 
